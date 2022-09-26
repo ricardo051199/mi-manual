@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu desplegable</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+
+        <nav class="menu-principal">
+
+            <div class="logo">
+                <img src="https://www.nicepng.com/png/full/119-1192435_libro-de-reclamaciones-icono-libro-de-reclamaciones.png" alt="" class="logo-img">
+            </div>
+
+            <div class="menu">
+                <ul class="opciones">
+                    <li class="opcion">
+                        <a href="index.html" class="enlace">Inicio</a>
+                    </li>
+        
+                    <li class="opcion opcion--show">
+                        <a href="#" class="enlace active">HTML<img src="componentes/flecha.svg" class="flecha"></a>
+        
+                        <ul class="sub-opciones">
+                            <li class="sub-opcion">
+                                <a href="#elementos" class="enlace enlace--inside">Elementos</a>
+                            </li>
+                            <li class="sub-opcion">
+                                <a href="#atributos" class="enlace enlace--inside">Atributos</a>
+                            </li>
+                            <li class="sub-opcion">
+                                <a href="#categorias" class="enlace enlace--inside">Categorias</a>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <li class="opcion  opcion--show">
+                        <a href="index_css.html" class="enlace" target="_blank">CSS<img src="componentes/flecha.svg" class="flecha"></a>
+        
+                        <ul class="sub-opciones">
+                            <li class="sub-opcion">
+                                <a href="index_css.html#hojas-estilo" class="enlace enlace--inside" target="_blank">Hojas de estilo</a>
+                            </li>
+                            <li class="sub-opcion">
+                                <a href="index_css.html#colores" class="enlace enlace--inside" target="_blank">Colores</a>
+                            </li>
+                            <li class="sub-opcion">
+                                <a href="index_css.html#selectores" class="enlace enlace--inside" target="_blank">Selectores</a>
+                            </li>
+                            <li class="sub-opcion">
+                                <a href="index_css.html#flexbox" class="enlace enlace--inside" target="_blank">Flexbox</a>
+                            </li>
+                            <li class="sub-opcion">
+                                <a href="index_css.html#configuraciones-flexbox" class="enlace enlace--inside">CONFIGURACÍONES DEL CONTENEDOR FLEXIBLE</a>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <li class="opcion">
+                        <a href="prototipo_css.html" class="enlace" target="_blank">Prototipo CSS</a>
+                    </li>
+        
+                </ul>
+            </div>
+
+            <div class="menu-logo">
+                <img src="componentes/menu.svg" alt="" class="menu-img">
+            </div>
+
+        </nav>
+
+    </header>
+
+    <tbody>
+
+        <hr id="elementos">
+
+        <table>
+            <caption>ELEMENTOS</caption>
+            <thead>
+                <tr>
+                    <th>Elemento</th>
+                    <th>Descripcion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" class="enlace-html" target="_blank">HTML</td>
+                    <td><p>Representa la raiz del documento html.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" class="enlace-html" target="_blank">p</td>
+                    <td><p>El elemento representa un pÃ¡rrafo.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" class="enlace-html" target="_blank">input</td>
+                    <td><p>El elemento se utiliza para crear controles interactivos para formularios basados en web.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body" class="enlace-html" target="_blank">body</td>
+                    <td><p>El elemento representa el contenido de un documento HTML.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" class="enlace-html" target="_blank">div</td>
+                    <td><p>El elemento es el contenedor genÃ©rico para el contenido de flujo.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" class="enlace-html" target="_blank">h1-h6</td>
+                    <td><p>Los elementos h1 a h6 representan seis niveles de encabezados de secciÃ³n.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" class="enlace-html" target="_blank">br</td>
+                    <td><p>El elemento vacÃ­o de salto de lÃ­nea br hace que el navegador avance a la siguiente lÃ­nea antes de mostrar el siguiente elemento o porciÃ³n de texto en una pÃ¡gina web.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr" class="enlace-html" target="_blank">hr</td>
+                    <td><p>El elemento hr representa una transiciÃ³n entre pÃ¡rrafos a un tema separado, pero relacionado.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr" class="enlace-html" target="_blank">wbr</td>
+                    <td><p>El elemento vacÃ­o wbr le indica al navegador donde podrÃ­a razonablemente insertar un salto de lÃ­nea para ajustar el contenido que es mÃ¡s grande que la ventana actual del navegador. Es el navegador el que toma la decisiÃ³n de si realmente se utiliza o no un salto de lÃ­nea.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup" class="enlace-html" target="_blank">sup</td>
+                    <td><p>El elemento sup permite definir superÃ­ndices.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" class="enlace-html" target="_blank">sub</td>
+                    <td><p>El elemento sub permite definir subÃ­ndices.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" class="enlace-html" target="_blank">strong</td>
+                    <td><p>El elemento strong indica que su contenido tiene una gran importancia, seriedad o urgencia. Los navegadores normalmente muestran el contenido en negrita.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" class="enlace-html" target="_blank">em</td>
+                    <td><p>Cuando queremos dar Ã©nfasis al lenguaje hablado, acentuamos y prolongamos la pronunciaciÃ³n de ciertas palabras y asÃ­ alteramos sutilmente el significado de lo que decimos.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark" class="enlace-html" target="_blank">mark</td>
+                    <td><p>El elemento mark permite resaltar texto de interÃ©s. Piense en esto como si usara un resaltador en un libro para marcar pasajes que encuentre de interÃ©s.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q" class="enlace-html" target="_blank">q</td>
+                    <td><p>El elemento q indica que el texto encerrado es una cita corta en lÃ­nea. La mayorÃ­a de los navegadores modernos implementan esto rodeando el texto con comillas. Este elemento estÃ¡ destinado a citas breves que no requieren varias lÃ­neas.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" class="enlace-html" target="_blank">blockquote</td>
+                    <td><p>El elemento blockquote indica que el texto contenido es una cita extensa.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite" class="enlace-html" target="_blank">cite</td>
+                    <td><p>El elemento cite permite incluir el nombre de un trabajo (Un libro, un ensayo, un poema, una pelÃ­cula, una pintura, un programa de computadora, etc.). Este puede ser un trabajo que se cita en la pagina, o puede ser simplemente un trabajo que se menciona de pasada.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn" class="enlace-html" target="_blank">dfn</td>
+                    <td><p>El elemento dfn se utiliza para identificar el tÃ©rmino a definir, mientras que la definiciÃ³n del tÃ©rmino se coloca fuera del elemento. El contenido del elemento (es decir, el tÃ©rmino) generalmente se representa en cursiva por parte de los navegadores.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr" class="enlace-html" target="_blank">abbr</td>
+                    <td><p>El elemento abbr se utiliza para identificar una abreviatura.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small" class="enlace-html" target="_blank">small</td>
+                    <td><p>El elemento small permite definir  la letra chica y los comentarios secundarios de una pÃ¡gina, como descargos de responsabilidad, derechos de autor, informaciÃ³n sobre licencias y restricciones legales.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins" class="enlace-html" target="_blank">ins</td>
+                    <td><p>El elemento ins marca las partes de un texto que han sido aÃ±adidos al documento.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del" class="enlace-html" target="_blank">del</td>
+                    <td><p>El elemento del marca las partes de un texto que han sido eliminadas del documento.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s" class="enlace-html" target="_blank">s</td>
+                    <td><p>El elemento s muestra el texto tachado con una lÃ­nea que lo atraviesa.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code" class="enlace-html" target="_blank">code</td>
+                    <td><p>El elemento code muestra su contenido con formato para indicar que el texto es un fragmento corto de cÃ³digo de computadora.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/spam" class="enlace-html" target="_blank">spam</td>
+                    <td><p>El elemento samp se utiliza para encerrar texto que representa la salida de un programa de computadora (Los mensajes de la computadora al usuario).</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd" class="enlace-html" target="_blank">kbd</td>
+                    <td><p>El elemento kbd representa un fragmento de texto en lÃ­nea que indica la entrada del usuario desde un teclado (Aunque tambiÃ©n se puede usar para representar otra entrada, como los comandos de voz).</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre" class="enlace-html" target="_blank">pre</td>
+                    <td><p>El elemento pre contiene texto que debe presentarse exactamente como estÃ¡ escrito en el archivo HTML.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address" class="enlace-html" target="_blank">address</td>
+                    <td><p>El elemento address indica que el HTML contenido proporciona informaciÃ³n de contacto para una persona o personas, o para una organizaciÃ³n.</p></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <hr id="atributos">
+
+        <table>
+            <caption>ATRIBUTOS</caption>
+            <thead>
+                <tr>
+                    <th>Atributos</th>
+                    <th>Descripcion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Normales</td>
+                    <td><p>Contienen información extra acerca del elemento.(atributo: nombre, valor)</p></td>
+                </tr>
+                <tr>
+                    <td>Vacíos</td>
+                    <td><p>El atributo no tiene valor</p></td>
+                </tr>
+                <tr>
+                    <td>Globales</td>
+                    <td><p>Atributos comunes a todos los elementos HTML. Pueden ser usados en todos los elementos, aunque es posible que no tengan ningún efecto en algunos elementos.</p></td>
+                </tr>
+                <tr>
+                    <td>Personalizado</td>
+                    <td><p>Atributos comunes a todos los elementos HTML. Pueden ser usados en todos los elementos.</p></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr id="categorias">
+
+        <table>
+            <caption>CATEGORÍAS</caption>
+            <thead>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Descripcion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="documentacion"><a href="https://html.spec.whatwg.org/#metadata-content" class="enlace-html" target="_blank">METADATA</td>
+                    <td><p>Los elementos que pertenecen a esta categoría modifican la presentación o el comportamiento del resto del documento y configuran enlaces a otros documentos</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://html.spec.whatwg.org/#flow-content" class="enlace-html" target="_blank">FLOW</td>
+                    <td><p>La mayoría de los elementos que van dentro del elemento body.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://html.spec.whatwg.org/#sectioning-content" class="enlace-html" target="_blank">SECTIONING</td>
+                    <td><p>Es un subconjunto de la categoría Flow. Incluye elementos que definen un grupo de contenido relacionado.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://html.spec.whatwg.org/#heading-content" class="enlace-html" target="_blank">HEADING</td>
+                    <td><p>Incluye elementos que definen un encabezado para un grupo de contenido relacionado. </p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://html.spec.whatwg.org/#phrasing-content" class="enlace-html" target="_blank">PHRASING</td>
+                    <td><p>Elementos que definen el texto.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://html.spec.whatwg.org/#embedded-content-2" class="enlace-html" target="_blank">EMBEDDED</td>
+                    <td><p>Elementos que cargan recursos externos en el documento.</p></td>
+                </tr>
+                <tr>
+                    <td class="documentacion"><a href="https://html.spec.whatwg.org/#interactive-content" class="enlace-html" target="_blank">INTERACTIVE</td>
+                    <td><p>Elementos que permiten la interacción con el usuario.</p></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </tbody>
+
+
+</body>
+</html>
+

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu desplegable</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+
+        <nav class="menu-principal">
+
+            <div class="logo">
+                <img src="https://www.nicepng.com/png/full/119-1192435_libro-de-reclamaciones-icono-libro-de-reclamaciones.png" alt="" class="logo-img">
+            </div>
+
+            <div class="menu">
+                <ul class="opciones">
+                    <li class="opcion">
+                        <a href="index.html" class="enlace">Inicio</a>
+                    </li>
+        
+                    <li class="opcion opcion--show">
+                        <a href="index_html.html" class="enlace">HTML <img src="componentes/flecha.svg" class="flecha"></a>
+        
+                        <ul class="sub-opciones">
+                            <li class="sub-opcion">
+                                <a href="index_html.html#elementos" class="enlace enlace--inside">Elementos</a>
+                            </li>
+                            <li class="sub-opcion">
+                                <a href="index_html.html#atributos" class="enlace enlace--inside">Atributos</a>
+                            </li>
+                            <li class="sub-opcion">
+                                <a href="index_html.html#categorias" class="enlace enlace--inside">Categorias</a>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <li class="opcion  opcion--show">
+                        <a href="#" class="enlace active">CSS<img src="componentes/flecha.svg" class="flecha"></a>
+        
+                        <ul class="sub-opciones">
+                            <li class="sub-opcion">
+                                <a href="#hojas-estilo" class="enlace enlace--inside">Hojas de estilo</a>
+                            </li>
+                            <li class="sub-opcion">
+                                <a href="#colores" class="enlace enlace--inside">Colores</a>
+                            </li>
+                            <li class="sub-opcion">
+                                <a href="#selectores" class="enlace enlace--inside">Selectores</a>
+                            </li>
+                            <li class="sub-opcion">
+                                <a href="#flexbox" class="enlace enlace--inside">Flexbox</a>
+                            </li>
+                            <li class="sub-opcion">
+                                <a href="#configuraciones-flexbox" class="enlace enlace--inside">CONFIGURACÍONES DEL CONTENEDOR FLEXIBLE</a>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <li class="opcion">
+                        <a href="prototipo_css.html" class="enlace" target="_blank">Prototipo CSS</a>
+                    </li>
+        
+                </ul>
+            </div>
+
+            <div class="menu-logo">
+                <img src="componentes/menu.svg" alt="" class="menu-img">
+            </div>
+
+        </nav>
+
+    </header>
+
+    <tbody>
+        
+        <hr id="hojas-estilo">
+
+        <table>
+            <caption>HOJAS DE ESTILO</caption>
+            <thead>
+                <tr>
+                    <th>Estilo</th>
+                    <th>Descripcíon</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ESTILOS EN EL ELEMENTO</td>
+                    <td>Los estilos se incorporan en la etiqueta de inicio de un elemento usando el atributo style.</td>
+                </tr>
+                <tr>
+                    <td>INCRUSTADOS EN EL DOCUMENTO</td>
+                    <td>
+                        <ul>
+                            <li>El elemento style contiene los estilos de un documento.</li>
+                            <li>El elemento se incluye dentro del elemento head.</li>
+                            <li>Incluir elementos usando el elemento style no es la forma mas eficiente de trabajar (no permite reutilizar el código ).</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ESTILOS EN UNA HOJA DE ESTILOS EXTERNA</td>
+                    <td>
+                        <ul>
+                            <li>Una hoja de estilos externa, no es más que un archivo de texto que contiene todas nuestras reglas.</li>
+                            <li>Es un archivo que tiene una extensión css.</li>
+                            <li>Podemos darle cualquier nombre al archivo, cuidando que este sea descriptivo (formulario.css, global.css, etc.)</li>
+                            <li>Luego de crear una hoja de estilos, necesitamos conectarla con la página que queremos dar  formato. Para esto usamos el elemento link</li>
+                            <li>El atributo href especifica la URL del recurso enlazado.</li>
+                            <li>El atributo rel indica la relación del documento enlazado con el actual.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr id="colores">
+
+        <table>
+            <caption>COLORES</caption>
+            <thead>
+                <tr>
+                    <th>Formato</th>
+                    <th>Descripcíon</th>
+                    <th>Regla</th>
+                    <th>Documentacíon</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nombres</td>
+                    <td><p>Podemos especificar un color usando un nombre predefinido.</p></td>
+                    <td>color: red;</td>
+                    <td class="documentacion"><a href="https://www.w3.org/TR/css-color-3/#svg-color" class="enlace-css" target="_blank">Ir a pagina</a></td>
+                </tr>
+                <tr>
+                    <td>Modelo RGB</td>
+                    <td>
+                        <ul>
+                            <li>Podemos  establecer el valor de  un color mezclando diferentes intensidades de los tres colores primarios.</li>
+                            <li>Podemos definir la transparencia de un color usando la función rgba, esta función es idéntica a la función rgb, pero con un parámetro adicional denominado opacidad,  para especificar la transparencia.</li>
+                        </ul> 
+                    </td>
+                    <td>
+                        <ul>
+                            <li>rgb(red, green, blue)</li>
+                            <li>rgba(r,g,b,a)</li>
+                        </ul> 
+                    </td>
+                    <td class="documentacion"><a href="https://g.co/kgs/sxEn2S" class="enlace-css" target="_blank">Ir a pagina</a></td>
+                </tr>
+                <tr>
+                    <td>Modelo HSL</td>
+                    <td>
+                        <ul>
+                            <li>En este modelo utilizamos conceptos que son más fáciles de comprender.</li>
+                            <li>Podemos definir la transparencia de un color usando la función hsla, esta función es idéntica a la función hsl, pero con un parámetro adicional denominado opacidad,  para especificar la transparencia.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>hsl(h,s,l)</li>
+                            <li>hsla(h,s,l,a)</li>
+                        </ul>
+                    </td>
+                    <td class="documentacion"><a href="https://hslpicker.com/" class="enlace-css" target="_blank">Ir a pagina</a></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <hr id="selectores">
+
+        <table>
+            <caption>SELECTORES</caption>
+            <thead>
+                <tr>
+                    <th>Selectores</th>
+                    <th>Descripcíon</th>
+                    <th>Sintaxis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>UNIVERSAL</td>
+                    <td>Selecciona todos los elementos.</td>
+                    <td>*{ declaraciones CSS }</td>
+                </tr>
+                <tr>
+                    <td>TIPO</td>
+                    <td>Permite seleccionar elementos usando el nombre del elemento.</td>
+                    <td>Permite seleccionar elementos usando el nombre del elemento.</td>
+                </tr>
+                <tr>
+                    <td>CLASE</td>
+                    <td>Permite seleccionar elementos en función de los valores del atributo class de los elementos.  Para que los elementos sean seleccionados, su atributo class debe incluir un valor  que coincida con el valor del selector.</td>
+                    <td>.valor_atributo { declaraciones CSS }</td>
+                </tr>
+                <tr>
+                    <td>ID</td>
+                    <td>Permite seleccionar un elemento en función del valor del atributo ID del elemento. Para que el elemento sea seleccionado, su atributo id debe coincidir exactamente con el valor dado en el selector.</td>
+                    <td>#valor_atributo { declaraciones CSS }</td>
+                </tr>
+                <tr>
+                    <td>ATRIBUTO</td>
+                    <td>Permite seleccionar elementos en función de la presencia o del valor de un determinado atributo.</td>
+                    <td>selector[attr] { … }</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr id="flexbox">
+
+        <table>
+            <caption>FLEXBOX</caption>
+            <thead>
+                <tr>
+                    <th>Propiedad</th>
+                    <th>Descripcíon</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>display</td>
+                    <td>La propiedad display con valor flex o inline-flex nos permite establecer un contenedor flexible. Los hijos del contenedor flexible se llaman elementos flexibles.</td>
+                </tr>
+                <tr>
+                    <td>flex-direction</td>
+                    <td>La propiedad flex-direction permite establecer la dirección del eje principal del contenedor flexible. Los elementos flexibles se colocan a en la dirección del eje principal.</td>
+                </tr>
+                <tr>
+                    <td>flex-wrap</td>
+                    <td>La propiedad flex-wrap controla si el contenedor flexible es de una sola línea o de varias líneas y la dirección del eje transversal, que determina la dirección en la que se alinean las líneas flexibles.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr id="configuraciones-flexbox">
+
+        <table>
+            <caption>CONFIGURACÍONES DEL CONTENEDOR FLEXIBLE</caption>
+            <thead>
+                <tr>
+                    <th>Configuracíon</th>
+                    <th>Descripcíon</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>row : nowrap</td>
+                    <td>CONTENEDOR FLEXIBLE DE UNA SOLA LINEA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE IZQUIERDA A DERECHA)</td>
+                </tr>
+                <tr>
+                    <td>row-reverse : nowrap</td>
+                    <td>CONTENEDOR FLEXIBLE DE UNA SOLA LINEA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE DERECHA A IZQUIERDA)</td>
+                </tr>
+                <tr>
+                    <td>column : nowrap</td>
+                    <td>CONTENEDOR FLEXIBLE DE UNA SOLA LINEA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ARRIBA A ABAJO)</td>
+                </tr>
+                <tr>
+                    <td>column-reverse : nowrap</td>
+                    <td>CONTENEDOR FLEXIBLE DE UNA SOLA LINEA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ABAJO A ARRIBA)</td>
+                </tr>
+                <tr>
+                    <td>row : wrap</td>
+                    <td>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE IZQUIERDA A DERECHA)</td>
+                </tr>
+                <tr>
+                    <td>row-reverse : wrap</td>
+                    <td>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE DERECHA A IZQUIERDA)</td>
+                </tr>
+                <tr>
+                    <td>column : wrap</td>
+                    <td>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ARRIBA A ABAJO)</td>
+                </tr>
+                <tr>
+                    <td>column-reverse : wrap</td>
+                    <td>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ABAJO A ARRIBA)</td>
+                </tr>
+                <tr>
+                    <td>row : wrap-reverse</td>
+                    <td>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE IZQUIERDA A DERECHA)</td>
+                </tr>
+                <tr>
+                    <td>row-reverse : wrap-reverse</td>
+                    <td>CONTENEDOR FLEXIBLE DE VARIAS LINEAS IZQUIERDA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE DERECHA A IZQUIERDA)</td>
+                </tr>
+                <tr>
+                    <td>column : wrap-reverse</td>
+                    <td>CONTENEDOR FLEXIBLE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ARRIBA A ABAJO)</td>
+                </tr>
+                <tr>
+                    <td>column-reverse : wrap-reverse</td>
+                    <td>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ABAJO A ARRIBA)</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </tbody>
+
+
+</body>
+</html>
+
