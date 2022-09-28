@@ -44,14 +44,15 @@ header{
 }
 
 .enlace{
+    align-content: center;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 20px;
-    padding: 0 50px;
+    padding: 0 65px 0 65px;
     align-items: center;
     display: flex;
     height: 100%;
-    width: 150px;
+    width: 120px;
 }
 
 .menu-logo{
@@ -94,11 +95,18 @@ header{
 }
 
 .enlace:hover{
+    clip-path: polygon(10% 20%, 90% 20%, 95% 30%, 95% 80%, 5% 80%, 5% 30%);
+
     background-color: rgb(5, 81, 119);
 }
 
+
 .enlace--inside{
     padding: 30px 100px 30px 30px;
+}
+
+.opcion--show{
+    width: 250px;
 }
 
 .articulos{
@@ -215,7 +223,7 @@ tbody tr:hover{
 }
 
 
-@media (max-width:850px){
+@media (max-width:990px){
     .menu-logo{
         display: flex;
     }
@@ -226,7 +234,7 @@ tbody tr:hover{
         overflow-y: auto;
         background-color: rgb(64, 64, 64);
         border-top: rgb(255, 255, 255) solid 10px;
-        transform: translateX(100%);
+        transform: translateX(850px);
     }
 
     .enlace{
@@ -244,5 +252,33 @@ tbody tr:hover{
         flex-direction: column;
         flex-wrap: wrap;
     }
-} 
+    .articulo{
+        width: auto;
+    }
+}
 
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(64, 64, 64);
+    margin-bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1%;
+}
+
+#autor{
+    display: flex;
+    padding-top: 2%;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#contactos img{
+    height: 40px;
+    width: 40px;
+}

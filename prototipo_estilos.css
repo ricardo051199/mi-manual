@@ -80,3 +80,42 @@ nav ul li {
 a:link{
   color: #BA7530;
 }
+
+h1{
+  font-size: 64px;
+  font-weight:bold;
+  font-family:fantasy;
+  text-decoration:underline;
+}
+
+h2{
+  font-size: 32px;
+  font-weight: bolder;
+  font-family:monospace;
+  text-decoration:underline double;
+}
+
+p{
+  font-size: 16px;
+  font-weight:lighter;
+  font-family: cursive;
+}
+
+li{
+  font-size: 16px;
+  font-weight: normal;
+  font-family: sans-serif;
+  text-decoration: overline double;
+}
+
+.aqua{
+  background-color: aqua;
+}
+
+.amarillo{
+  background-color:yellow;
+}
+
+.tachado{
+  text-decoration: line-through double;
+}
